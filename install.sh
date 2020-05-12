@@ -1,4 +1,3 @@
-#!bin/sh
 clear
 green="\033[32;1m"
 yellow="\033[33;1m"
@@ -14,11 +13,10 @@ figlet Hunter Force Exploit
 read -p "masukan nama anda: " nama
 echo
 echo $green"Loading!!!"
-sleep 2
-echo $green"DONE!!!"
-clear
+sleep 3
+echo $green"Done!!!"
 echo "selamat datang " $nama
-sleep 0.5
+sleep 2
 clear
 echo $green"==============================================="
 echo $white"coded By ./Anon666Txploit"
@@ -32,7 +30,7 @@ echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠�
 echo $white"(1) Stabilkan jaringan"
 echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
 echo
-echo $gree"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
+echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
 echo $white"(2) Auto Install Sqlmap"
 echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
 echo
@@ -43,9 +41,10 @@ echo
 echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
 echo $white"(4) Exit"
 echo $green"[+]≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠[+]"
-echo
+echo 
 echo $white
 read -p "pilih mana : " coy
+
 if [ $coy = 1 ]  ||  [ $coy = 1 ]
 then
 clear
@@ -56,12 +55,12 @@ fi
 if [ $coy = 2 ] || [ $coy = 2 ]
 then
 clear
-echo $green"Install Sqlmap"
+echo $green"menginstall Sqlmap"
 sleep 1
 pkg update && pkg upgrade -y
-pkg install python2 -y
-pip2 install request -y
-pip2 install sqlmap -y
+pkg install python2
+pip2 install request
+pip2 install sqlmap
 clear
 sleep 2
 echo $red"Isntallasi Berhasil"
@@ -69,26 +68,30 @@ sqlmap
 fi
 
 
-if  [ $coy = 3 ] || [ $coy = 3 ]
+if [ $coy = 3 ] || [ $coy = 3 ]
 then
+echo $green"menginstall Metasploit"
+sleep 2
 clear
-echo $green"installing Metasploit"
-sleep 1
-pkg install git && pkg install wget && pkg install curl -y
-pkg install ruby -y
-pkg install root-repo -y
-pkg install unstable-repo -y
-pkg install x11-repo -y
-pkg install metasploit -y
+pkg install ruby
+pkg install git
+pkg install wget
+pkg install curl
+pkg install root-repo
+pkg install unstable-repo
+pkg install x11-repo
+pkg install metasploit
+echo $green"installasi berhasil"
+sleep 2
 clear
 echo $green"installasi berhasil"
 sleep 2
+clear
 msfconsole
 fi
 
-if [ $coy = 4 ] || [ $coy=4 ]
+if [ $coy = 4 ] || [ $coy = 4 ]
 then
 exit
+echo $white
 fi
-
-
